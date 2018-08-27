@@ -1,0 +1,435 @@
+<html>
+
+<head>
+<meta name=标题 content="">
+<meta name=关键词 content="">
+<meta http-equiv=Content-Type content="text/html; charset=x-mac-chinesesimp">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:"Courier New";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:DengXian;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:"\@DengXian";}
+@font-face
+	{font-family:"Microsoft YaHei";
+	panose-1:2 11 5 3 2 2 4 2 2 4;}
+@font-face
+	{font-family:Menlo;
+	panose-1:2 11 6 9 3 8 4 2 2 4;}
+@font-face
+	{font-family:"\@Microsoft YaHei";}
+@font-face
+	{font-family:微软雅黑;}
+@font-face
+	{font-family:"\@微软雅黑";}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	font-size:12.0pt;
+	font-family:DengXian;}
+a:link, span.MsoHyperlink
+	{color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:#954F72;
+	text-decoration:underline;}
+code
+	{font-family:Courier;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:21.0pt;
+	font-size:12.0pt;
+	font-family:DengXian;}
+p.a, li.a, div.a
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:200%;
+	font-size:12.0pt;
+	font-family:"Microsoft YaHei";}
+.MsoChpDefault
+	{font-family:DengXian;}
+ /* Page Definitions */
+@page WordSection1
+	{size:595.0pt 842.0pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	layout-grid:15.6pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body bgcolor=white lang=ZH-CN link="#0563C1" vlink="#954F72" style='text-justify-trim:
+punctuation'>
+
+<div class=WordSection1 style='layout-grid:15.6pt'>
+
+<p class=MsoNormal style='line-height:200%'><b><span style='font-size:14.0pt;
+line-height:200%;font-family:"Microsoft YaHei"'>安装<span lang=EN-US>dovecot</span></span></b></p>
+
+<p class=MsoNormal align=left style='text-align:left;line-height:200%'><span
+lang=EN-US style='font-family:"Microsoft YaHei"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+lang=EN-US style='font-family:微软雅黑;color:#333333;background:transparent'>Dovecot</span><span
+style='font-family:微软雅黑;color:#333333;background:transparent'>是<span
+lang=EN-US>CentOS</span>系统中著名的<span lang=EN-US>POP3/IMAP</span>服务器实现。<span
+lang=EN-US>POP3/IMAP</span>是从邮件服务器中读取邮件时使用的协议，<span lang=EN-US>POP3</span>将邮件全部从服务器中拖取下来；<span
+lang=EN-US>IMAP</span>则每次从服务器获取邮件名等关键信息，要读某封邮件时，才从服务器下载。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left;line-height:200%'><span
+lang=EN-US style='font-family:微软雅黑;color:#333333;background:transparent'>&nbsp;&nbsp;&nbsp;&nbsp; </span><b><span
+style='font-family:微软雅黑;color:#333333;background:transparent'>在使用邮件服务之前，请确保你之前配置的<span
+lang=EN-US>DNS</span>可以使用，并且已经启动。我们需要用到<span lang=EN-US>DNS</span>配置中的邮件域名解析。</span></b></p>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>1</span><span style='font-family:"Microsoft YaHei"'>、安装<span
+lang=EN-US>dovecot </span></span></p>
+
+<table class=a0 border=1 cellspacing=0 cellpadding=0 width="97%"
+ style='width:97.0%;margin-left:24.1pt;border-collapse:collapse;border:none'>
+ <tr style='height:14.9pt'>
+  <td width=836 valign=top style='width:836.15pt;border:solid windowtext 1.0pt;
+  background:#E7E6E6;padding:0cm 5.4pt 0cm 5.4pt;height:14.9pt'>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>[root@localhost
+  ~]# <b>rpm -qa | grep dovecot</b></span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>[root@localhost
+  ~]# <b>yum install -y dovecot</b></span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>Installed:</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp;
+  dovecot.i686
+  1:2.0.9-22.el6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>Complete!</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>[root@localhost
+  ~]# </span></code></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>2</span><span style='font-family:"Microsoft YaHei"'>、修改配置文件“<span
+lang=EN-US>/etc/dovecot/dovecot.conf</span>”，开启<span lang=EN-US>dovecot</span>功能</span></p>
+
+<table class=a0 border=1 cellspacing=0 cellpadding=0 width="97%"
+ style='width:97.0%;margin-left:24.1pt;border-collapse:collapse;border:none'>
+ <tr style='height:14.9pt'>
+  <td width=537 valign=top style='width:537.4pt;border:solid windowtext 1.0pt;
+  background:#E7E6E6;padding:0cm 5.4pt 0cm 5.4pt;height:14.9pt'>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>[root@localhost
+  ~]# <b>gedit /etc/dovecot/dovecot.conf</b></span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><b><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>protocols = imap
+  pop3 lmtp &nbsp;&nbsp;&nbsp;//</span></b></code><code><b><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>这行默认被注释了，必须去掉注释。这里表示启用了</span></b></code><code><b><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>imap
+  pop3 lmtp</span></b></code><code><b><span style='font-size:10.0pt;line-height:
+  200%;font-family:DengXian'>协议</span></b></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><b><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>listen=*&nbsp;&nbsp;&nbsp;&nbsp;
+  //</span></b></code><code><b><span style='font-size:10.0pt;line-height:200%;
+  font-family:DengXian'>监听所有的</span></b></code><code><b><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>ipv4</span></b></code><code><b><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>接口</span></b></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><b><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>login_trusted_networks
+  = 192.168.0.0/24&nbsp;&nbsp;&nbsp;&nbsp; //</span></b></code><code><b><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>允许登录的网段</span></b></code></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>3</span><span style='font-family:"Microsoft YaHei"'>、设置邮件的存储路径。修改配置文件“<span
+lang=EN-US>/etc/dovecot/conf.d/10-mail.conf</span>”，参数<span lang=EN-US>mail_location
+</span></span></p>
+
+<table class=a0 border=1 cellspacing=0 cellpadding=0 width="97%"
+ style='width:97.0%;margin-left:24.1pt;border-collapse:collapse;border:none'>
+ <tr style='height:14.9pt'>
+  <td width=537 valign=top style='width:537.4pt;border:solid windowtext 1.0pt;
+  background:#E7E6E6;padding:0cm 5.4pt 0cm 5.4pt;height:14.9pt'>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.5pt;line-height:200%;font-family:Menlo'>[root@localhost
+  pub]# <b>gedit </b></span></code><b><span lang=EN-US style='font-size:10.5pt;
+  line-height:200%;font-family:Menlo'>/etc/dovecot/conf.d/10-mail.conf</span></b><code><b><span
+  lang=EN-US style='font-size:10.5pt;line-height:200%;font-family:Menlo'> </span></b></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><b><span lang=EN-US
+  style='font-size:10.5pt;line-height:200%;font-family:Menlo'># mbox</span></b></code><code><b><span
+  style='font-size:10.5pt;line-height:200%;font-family:DengXian'>是内部邮箱，属于</span></b></code><code><b><span
+  lang=EN-US style='font-size:10.5pt;line-height:200%;font-family:Menlo'>dovecot</span></b></code><code><b><span
+  style='font-size:10.5pt;line-height:200%;font-family:DengXian'>持有。而通常</span></b></code><code><b><span
+  lang=EN-US style='font-size:10.5pt;line-height:200%;font-family:Menlo'>IMAP</span></b></code><code><b><span
+  style='font-size:10.5pt;line-height:200%;font-family:DengXian'>协议支持多种邮箱，因此其他邮箱的内容就存储在</span></b></code><code><b><span
+  lang=EN-US style='font-size:10.5pt;line-height:200%;font-family:Menlo'>/var/mail/%u</span></b></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><b><span lang=EN-US
+  style='font-size:10.5pt;line-height:200%;font-family:Menlo'>mail_location =
+  mbox:~/mail:INBOX=/var/mail/%u</span></b></code></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>4</span><span style='font-family:"Microsoft YaHei"'>、创建邮件存储目录。上面已经配置好了邮件的存储路径，但是这个目录需要用户来创建，我们就为用户<span
+lang=EN-US>david</span>创建一个邮件目录 。<b>注意，系统中的每一个用户都可以当做邮件用户</b></span></p>
+
+<table class=a0 border=1 cellspacing=0 cellpadding=0 width="97%"
+ style='width:97.0%;margin-left:24.1pt;border-collapse:collapse;border:none'>
+ <tr style='height:14.9pt'>
+  <td width=836 valign=top style='width:836.15pt;border:solid windowtext 1.0pt;
+  background:#E7E6E6;padding:0cm 5.4pt 0cm 5.4pt;height:14.9pt'>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.5pt;line-height:200%;font-family:Menlo'>[root@localhost
+  ~]# <b>su david&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //</b></span></code><code><b><span
+  style='font-size:10.5pt;line-height:200%;font-family:DengXian'>切换到</span></b></code><code><b><span
+  lang=EN-US style='font-size:10.5pt;line-height:200%;font-family:Menlo'>david</span></b></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.5pt;line-height:200%;font-family:Menlo'>[david@localhost
+  root]$ <b>cd /home/david/&nbsp;&nbsp;&nbsp; //</b></span></code><code><b><span
+  style='font-size:10.5pt;line-height:200%;font-family:DengXian'>跳转到家目录</span></b></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.5pt;line-height:200%;font-family:Menlo'>[david@localhost
+  ~]$ <b>mkdir -p mail/.imap/INBOX&nbsp;&nbsp;&nbsp;&nbsp; //</b></span></code><code><b><span
+  style='font-size:10.5pt;line-height:200%;font-family:DengXian'>创建邮件目录</span></b></code></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>5</span><span style='font-family:"Microsoft YaHei"'>、设置防火墙，<span
+lang=EN-US>imap</span>使用<span lang=EN-US>143</span>端口，<span lang=EN-US>pop3</span>使用<span
+lang=EN-US>110</span>端口，在防火墙中打开<span lang=EN-US>tcp</span>的这两个端口 </span></p>
+
+<table class=a0 border=1 cellspacing=0 cellpadding=0 width="97%"
+ style='width:97.0%;margin-left:24.1pt;border-collapse:collapse;border:none'>
+ <tr style='height:14.9pt'>
+  <td width=836 valign=top style='width:836.15pt;border:solid windowtext 1.0pt;
+  background:#E7E6E6;padding:0cm 5.4pt 0cm 5.4pt;height:14.9pt'>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>[root@localhost
+  ~]# <b>gedit /etc/sysconfig/iptables</b></span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><b><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>-A INPUT -m state
+  --state NEW -m tcp -p tcp --dport 110 -j ACCEPT</span></b></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><b><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>-A INPUT -m state
+  --state NEW -m tcp -p tcp --dport 143 -j ACCEPT</span></b></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp;</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>[root@localhost ~]#
+  <b>service iptables restart</b></span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>iptables</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>：将链设置为政策</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>
+  ACCEPT</span></code><code><span style='font-size:10.0pt;line-height:200%;
+  font-family:DengXian'>：</span></code><code><span lang=EN-US style='font-size:
+  10.0pt;line-height:200%;font-family:Menlo'>filter
+  nat&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  [</span></code><code><span style='font-size:10.0pt;line-height:200%;
+  font-family:DengXian'>确定</span></code><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>]</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>iptables</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>：清除防火墙规则：</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  [</span></code><code><span style='font-size:10.0pt;line-height:200%;
+  font-family:DengXian'>确定</span></code><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>]</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>iptables</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>：正在卸载模块：</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  [</span></code><code><span style='font-size:10.0pt;line-height:200%;
+  font-family:DengXian'>确定</span></code><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>]</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>iptables</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>：应用防火墙规则：</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  [</span></code><code><span style='font-size:10.0pt;line-height:200%;
+  font-family:DengXian'>确定</span></code><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>]</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>iptables</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>：载入额外模块：</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>nf_conntrack_ftp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  [</span></code><code><span style='font-size:10.0pt;line-height:200%;
+  font-family:DengXian'>确定</span></code><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>]</span></code></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>6</span><span style='font-family:"Microsoft YaHei"'>、启动服务</span></p>
+
+<table class=a0 border=1 cellspacing=0 cellpadding=0 width="97%"
+ style='width:97.0%;margin-left:24.1pt;border-collapse:collapse;border:none'>
+ <tr style='height:14.9pt'>
+  <td width=537 valign=top style='width:537.4pt;border:solid windowtext 1.0pt;
+  background:#E7E6E6;padding:0cm 5.4pt 0cm 5.4pt;height:14.9pt'>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>[root@localhost
+  ~]# <b>service dovecot start</b></span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span style='font-size:
+  10.0pt;line-height:200%;font-family:DengXian'>正在启动</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>
+  Dovecot Imap</span></code><code><span style='font-size:10.0pt;line-height:
+  200%;font-family:DengXian'>：</span></code><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  [</span></code><code><span style='font-size:10.0pt;line-height:200%;
+  font-family:DengXian'>确定</span></code><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>]</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>[root@localhost
+  ~]# </span></code></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>7</span><span style='font-family:"Microsoft YaHei"'>、检测<span
+lang=EN-US>110</span>和<span lang=EN-US>143</span>端口是否运行</span></p>
+
+<table class=a0 border=1 cellspacing=0 cellpadding=0 width="97%"
+ style='width:97.0%;margin-left:24.1pt;border-collapse:collapse;border:none'>
+ <tr style='height:14.9pt'>
+  <td width=836 valign=top style='width:836.15pt;border:solid windowtext 1.0pt;
+  background:#E7E6E6;padding:0cm 5.4pt 0cm 5.4pt;height:14.9pt'>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>[root@localhost
+  ~]# <b>netstat -tunlp | grep 110</b></span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>tcp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0
+  0.0.0.0:110&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  0.0.0.0:*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  LISTEN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  2650/dovecot&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>tcp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0
+  :::110&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  :::*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  LISTEN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  2650/dovecot&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>[root@localhost
+  ~]# <b>netstat -tunlp | grep 143</b></span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>tcp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0
+  0.0.0.0:143&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  0.0.0.0:*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  LISTEN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  2650/dovecot&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>tcp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0
+  :::143&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  :::*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  LISTEN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2650/dovecot&nbsp; </span></code></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>8</span><span style='font-family:"Microsoft YaHei"'>、命令行登录邮箱</span></p>
+
+<table class=a0 border=1 cellspacing=0 cellpadding=0 width="97%"
+ style='width:97.0%;margin-left:24.1pt;border-collapse:collapse;border:none'>
+ <tr style='height:14.9pt'>
+  <td width=836 valign=top style='width:836.15pt;border:solid windowtext 1.0pt;
+  background:#E7E6E6;padding:0cm 5.4pt 0cm 5.4pt;height:14.9pt'>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>[root@localhost
+  ~]# <b>telnet 192.168.0.113 143&nbsp;&nbsp;&nbsp;&nbsp; //ip</b></span></code><code><b><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>就是服务器地址，</span></b></code><code><b><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>143</span></b></code><code><b><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>是</span></b></code><code><b><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>imap</span></b></code><code><b><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>的端口</span></b></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>Trying 192.168.0.113...</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>Connected to
+  192.168.0.113.</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>Escape character
+  is '^]'.</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>* OK [CAPABILITY
+  IMAP4rev1 LITERAL+ SASL-IR LOGIN-REFERRALS ID ENABLE IDLE STARTTLS
+  AUTH=PLAIN] Dovecot ready.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>//</b></span></code><code><b><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>到这里说明可以连接了</span></b></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><b><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>a login david
+  543092&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  //</span></b></code><code><b><span style='font-size:10.0pt;line-height:200%;
+  font-family:DengXian'>这是登录操作，用户名</span></b></code><code><b><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>david</span></b></code><code><b><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>，密码</span></b></code><code><b><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>543092</span></b></code><code><b><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>。这条命令需要用户输入</span></b></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>a OK [CAPABILITY
+  IMAP4rev1 LITERAL+ SASL-IR LOGIN-REFERRALS ID ENABLE IDLE SORT SORT=DISPLAY
+  THREAD=REFERENCES THREAD=REFS MULTIAPPEND UNSELECT CHILDREN NAMESPACE UIDPLUS
+  LIST-EXTENDED I18NLEVEL=1 CONDSTORE QRESYNC ESEARCH ESORT SEARCHRES WITHIN
+  CONTEXT=SEARCH LIST-STATUS] <b>Logged in </b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>登录成功</span></code></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:200%'><span
+lang=EN-US style='font-family:"Microsoft YaHei"'>Copyright@david&nbsp;
+zhytwj2018@163.com</span></p>
+
+</div>
+
+</body>
+
+</html>

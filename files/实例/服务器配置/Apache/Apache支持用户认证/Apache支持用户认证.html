@@ -1,0 +1,303 @@
+<html>
+
+<head>
+<meta name=标题 content="">
+<meta name=关键词 content="">
+<meta http-equiv=Content-Type content="text/html; charset=x-mac-chinesesimp">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:"Courier New";
+	panose-1:2 7 3 9 2 2 5 2 4 4;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:DengXian;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:"\@DengXian";}
+@font-face
+	{font-family:"Microsoft YaHei";
+	panose-1:2 11 5 3 2 2 4 2 2 4;}
+@font-face
+	{font-family:Menlo;
+	panose-1:2 11 6 9 3 8 4 2 2 4;}
+@font-face
+	{font-family:"\@Microsoft YaHei";}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	font-size:12.0pt;
+	font-family:DengXian;}
+a:link, span.MsoHyperlink
+	{color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:#954F72;
+	text-decoration:underline;}
+code
+	{font-family:Courier;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:21.0pt;
+	font-size:12.0pt;
+	font-family:DengXian;}
+p.a, li.a, div.a
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:200%;
+	font-size:12.0pt;
+	font-family:"Microsoft YaHei";}
+.MsoChpDefault
+	{font-family:DengXian;}
+ /* Page Definitions */
+@page WordSection1
+	{size:595.0pt 842.0pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	layout-grid:15.6pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body bgcolor=white lang=ZH-CN link="#0563C1" vlink="#954F72" style='text-justify-trim:
+punctuation'>
+
+<div class=WordSection1 style='layout-grid:15.6pt'>
+
+<p class=MsoNormal style='line-height:200%'><b><span lang=EN-US
+style='font-size:14.0pt;line-height:200%;font-family:"Microsoft YaHei"'>Apache</span></b><b><span
+style='font-size:14.0pt;line-height:200%;font-family:"Microsoft YaHei"'>支持用户认证</span></b></p>
+
+<p class=MsoNormal style='line-height:200%'><b><span lang=EN-US
+style='font-size:14.0pt;line-height:200%;font-family:"Microsoft YaHei"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></b><span
+style='font-family:"Microsoft YaHei"'>为了服务器的安全，通常用户在请求访问某个文件夹的时候，<span
+lang=EN-US>Apache</span>可以要求用户输入有效的用户名和登录密码</span></p>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>1</span><span style='font-family:"Microsoft YaHei"'>、创建一个测试目录</span></p>
+
+<table class=a0 border=1 cellspacing=0 cellpadding=0 width="97%"
+ style='width:97.0%;margin-left:24.1pt;border-collapse:collapse;border:none'>
+ <tr style='height:14.9pt'>
+  <td width=415 valign=top style='width:414.5pt;border:solid windowtext 1.0pt;
+  background:#E7E6E6;padding:0cm 5.4pt 0cm 5.4pt;height:14.9pt'>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>[root@localhost
+  cgi-bin]#<b> mkdir /var/www/html/wj</b></span></code></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>2</span><span style='font-family:"Microsoft YaHei"'>、开启认证功能，修改配置文件<span
+lang=EN-US>httpd.conf</span>如下，（将<span lang=EN-US>html</span>目录的配置中<span
+lang=EN-US>none</span>改为<span lang=EN-US>all</span>） </span></p>
+
+<table class=a0 border=1 cellspacing=0 cellpadding=0 width="97%"
+ style='width:97.0%;margin-left:24.1pt;border-collapse:collapse;border:none'>
+ <tr style='height:14.9pt'>
+  <td width=415 valign=top style='width:414.5pt;border:solid windowtext 1.0pt;
+  background:#E7E6E6;padding:0cm 5.4pt 0cm 5.4pt;height:14.9pt'>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>[root@localhost
+  ~]# </span></code><code><b><span lang=EN-US style='font-size:10.5pt;
+  line-height:200%;font-family:Menlo'>gedit </span></b></code><b><span
+  lang=EN-US style='font-size:10.5pt;line-height:200%;font-family:Menlo'>/etc/httpd/conf/httpd.conf</span></b></p>
+  <p class=MsoNormal style='line-height:200%'><code><b><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&lt;Directory
+  &quot;/var/www/html&quot;&gt;</span></b></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'># AllowOverride
+  controls what directives may be placed in .htaccess files.</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'># It can be
+  &quot;All&quot;, &quot;None&quot;, or any combination of the keywords:</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>#&nbsp;&nbsp;
+  Options FileInfo AuthConfig Limit</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>#</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp;&nbsp; <b>&nbsp;AllowOverride
+  All&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //</b></span></code><code><b><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>默认是</span></b></code><code><b><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>none</span></b></code><code><b><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>，这里改为</span></b></code><code><b><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>all</span></b></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>#</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'># Controls who
+  can get stuff from this server.</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>#</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp;&nbsp;&nbsp;
+  Order allow,deny</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp;&nbsp;&nbsp;
+  Allow from all</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><b><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&lt;/Directory&gt;</span></b></code></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>3</span><span style='font-family:"Microsoft YaHei"'>、给需要认证的目录添加配置，修改<span
+lang=EN-US>httpd.conf</span>文件，添加如下内容</span></p>
+
+<table class=a0 border=1 cellspacing=0 cellpadding=0 width="97%"
+ style='width:97.0%;margin-left:24.1pt;border-collapse:collapse;border:none'>
+ <tr style='height:14.9pt'>
+  <td width=836 valign=top style='width:836.15pt;border:solid windowtext 1.0pt;
+  background:#E7E6E6;padding:0cm 5.4pt 0cm 5.4pt;height:14.9pt'>
+  <p class=MsoNormal style='line-height:200%'><code><b><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&lt;Directory
+  &quot;/var/www/html/wj&quot;&gt;&nbsp;&nbsp;&nbsp;&nbsp; //wj</span></b></code><code><b><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>就是我们要认证的目录</span></b></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><b><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp;&nbsp;&nbsp;
+  AllowOverride AuthConfig&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //</span></b></code><code><b><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>这里必须使用</span></b></code><code><b><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>AuthConfig</span></b></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><b><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp;&nbsp;&nbsp;
+  Order allow,deny</span></b></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><b><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp;&nbsp;&nbsp;
+  Allow from all</span></b></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><b><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&lt;/Directory&gt;</span></b></code></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>4</span><span style='font-family:"Microsoft YaHei"'>、 给测试目录设置用户名和密码</span></p>
+
+<table class=a0 border=1 cellspacing=0 cellpadding=0 width="97%"
+ style='width:97.0%;margin-left:24.1pt;border-collapse:collapse;border:none'>
+ <tr style='height:14.9pt'>
+  <td width=836 valign=top style='width:836.15pt;border:solid windowtext 1.0pt;
+  background:#E7E6E6;padding:0cm 5.4pt 0cm 5.4pt;height:14.9pt'>
+  <p class=MsoNormal style='line-height:200%'><code><b><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>[root@localhost
+  wj]# htpasswd -c /var/www/html/wj/.htpasswd david&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  //david</span></b></code><code><b><span style='font-size:10.0pt;line-height:
+  200%;font-family:DengXian'>就是创建的用户名</span></b></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><b><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>New password: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//</span></b></code><code><b><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>这里需要输入密码，下面的是确认密码</span></b></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><b><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>Re-type new
+  password: </span></b></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><b><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>Adding password
+  for user david&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //</span></b></code><code><b><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>创建成功</span></b></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><b><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>[root@localhost
+  wj]# </span></b></code></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>5</span><span style='font-family:"Microsoft YaHei"'>、创建<span
+lang=EN-US>htaccess</span>文件，并且增加内容 </span></p>
+
+<table class=a0 border=1 cellspacing=0 cellpadding=0 width="97%"
+ style='width:97.0%;margin-left:24.1pt;border-collapse:collapse;border:none'>
+ <tr style='height:14.9pt'>
+  <td width=836 valign=top style='width:836.15pt;border:solid windowtext 1.0pt;
+  background:#E7E6E6;padding:0cm 5.4pt 0cm 5.4pt;height:14.9pt'>
+  <p class=MsoNormal style='line-height:200%'><code><b><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>[root@localhost
+  wj]# vim .htaccess</span></b></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><b><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>AuthUserFile
+  /var/www/html/wj/.htpasswd</span></b></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><b><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>AuthName
+  &quot;david&quot;</span></b></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><b><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>AuthType Basic</span></b></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><b><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>require
+  valid-user</span></b></code></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>6</span><span style='font-family:"Microsoft YaHei"'>、重启<span
+lang=EN-US>Apache</span>服务</span></p>
+
+<table class=a0 border=1 cellspacing=0 cellpadding=0 width="97%"
+ style='width:97.0%;margin-left:24.1pt;border-collapse:collapse;border:none'>
+ <tr style='height:14.9pt'>
+  <td width=836 valign=top style='width:836.15pt;border:solid windowtext 1.0pt;
+  background:#E7E6E6;padding:0cm 5.4pt 0cm 5.4pt;height:14.9pt'>
+  <p class=MsoNormal style='line-height:200%'><code><b><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>[root@localhost
+  wj]# service httpd restart</span></b></code></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>7</span><span style='font-family:"Microsoft YaHei"'>、测试，在浏览器输入“<span
+lang=EN-US>127.0.0.1/wj</span>”，可以看到需要输入密码</span></p>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>&nbsp;&nbsp;&nbsp;&nbsp; <img width=598 height=333 id="图片 1"
+src="Apache支持用户认证.fld/image001.png"></span></p>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>&nbsp;&nbsp;&nbsp;&nbsp; <img width=450 height=256 id="图片 5"
+src="Apache支持用户认证.fld/image002.png"></span></p>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:200%'><span
+lang=EN-US style='font-family:"Microsoft YaHei"'>Copyright@david&nbsp;
+zhytwj2018@163.com</span></p>
+
+</div>
+
+</body>
+
+</html>

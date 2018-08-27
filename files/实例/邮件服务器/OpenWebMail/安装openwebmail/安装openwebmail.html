@@ -1,0 +1,441 @@
+<html>
+
+<head>
+<meta name=标题 content="">
+<meta name=关键词 content="">
+<meta http-equiv=Content-Type content="text/html; charset=x-mac-chinesesimp">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:"Courier New";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:DengXian;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:"\@DengXian";}
+@font-face
+	{font-family:"Microsoft YaHei";
+	panose-1:2 11 5 3 2 2 4 2 2 4;}
+@font-face
+	{font-family:Menlo;
+	panose-1:2 11 6 9 3 8 4 2 2 4;}
+@font-face
+	{font-family:"\@Microsoft YaHei";}
+@font-face
+	{font-family:SimSun;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:"\@SimSun";}
+@font-face
+	{font-family:"MS Mincho";
+	panose-1:2 2 6 9 4 2 5 8 3 4;}
+@font-face
+	{font-family:"\@MS Mincho";}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	font-size:12.0pt;
+	font-family:DengXian;}
+a:link, span.MsoHyperlink
+	{color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:#954F72;
+	text-decoration:underline;}
+code
+	{font-family:Courier;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:21.0pt;
+	font-size:12.0pt;
+	font-family:DengXian;}
+p.a, li.a, div.a
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:200%;
+	font-size:12.0pt;
+	font-family:"Microsoft YaHei";}
+.MsoChpDefault
+	{font-family:DengXian;}
+ /* Page Definitions */
+@page WordSection1
+	{size:595.0pt 842.0pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	layout-grid:15.6pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body bgcolor=white lang=ZH-CN link="#0563C1" vlink="#954F72" style='text-justify-trim:
+punctuation'>
+
+<div class=WordSection1 style='layout-grid:15.6pt'>
+
+<p class=MsoNormal style='line-height:200%'><b><span style='font-size:14.0pt;
+line-height:200%;font-family:"Microsoft YaHei"'>安装<span lang=EN-US>openwebmail</span></span></b></p>
+
+<p class=MsoNormal align=left style='text-align:left;line-height:200%'><span
+lang=EN-US style='font-family:"Microsoft YaHei"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><b><span
+lang=EN-US style='font-family:"Times New Roman"'>&nbsp;</span></b><span
+lang=EN-US style='font-family:"Microsoft YaHei"'>openwebmail</span><span
+style='font-family:"Microsoft YaHei"'>提供了可</span><span style='font-family:"Microsoft YaHei"'>视</span><span
+style='font-family:"Microsoft YaHei"'>化的</span><span style='font-family:"Microsoft YaHei"'>邮</span><span
+style='font-family:"Microsoft YaHei"'>件管理系</span><span style='font-family:"Microsoft YaHei"'>统</span><span
+style='font-family:"Microsoft YaHei"'>，它运行在<span lang=EN-US>Apache</span></span><span
+style='font-family:"Microsoft YaHei"'>环</span><span style='font-family:"Microsoft YaHei"'>境下。</span></p>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>1</span><span style='font-family:"Microsoft YaHei"'>、安装必备软件 </span></p>
+
+<table class=a0 border=1 cellspacing=0 cellpadding=0 width="97%"
+ style='width:97.0%;margin-left:24.1pt;border-collapse:collapse;border:none'>
+ <tr style='height:14.9pt'>
+  <td width=836 valign=top style='width:836.15pt;border:solid windowtext 1.0pt;
+  background:#E7E6E6;padding:0cm 5.4pt 0cm 5.4pt;height:14.9pt'>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>[root@localhost
+  ~]# <b>yum install </b></span></code><code><b><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Helvetica'>_</span></b></code><code><b><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>y
+  perl-TextIconv perl-CGI perl-CPAN perl-suidper perl-YAML</span></b></code></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>2</span><span style='font-family:"Microsoft YaHei"'>、在官网（</span><span
+lang=EN-US><a href="http://openwebmail.org/openwebmail/download/release/"><span
+style='font-family:"Microsoft YaHei"'>http://openwebmail.org/openwebmail/download/release/</span></a></span><span
+style='font-family:"Microsoft YaHei"'>）下载<span lang=EN-US>openwebmail</span>，解压</span></p>
+
+<table class=a0 border=1 cellspacing=0 cellpadding=0 width="97%"
+ style='width:97.0%;margin-left:24.1pt;border-collapse:collapse;border:none'>
+ <tr style='height:14.9pt'>
+  <td width=537 valign=top style='width:537.4pt;border:solid windowtext 1.0pt;
+  background:#E7E6E6;padding:0cm 5.4pt 0cm 5.4pt;height:14.9pt'>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>[root@localhost
+  ~]# <b>tar </b></span></code><code><b><span lang=EN-US style='font-size:10.0pt;
+  line-height:200%;font-family:Helvetica'>_</span></b></code><code><b><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>xvf
+  openwebmail-2-53.tar</span></b></code><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'> </span></code></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>3</span><span style='font-family:"Microsoft YaHei"'>、解压后得到两个目录“<span
+lang=EN-US>cgi-bin</span>”和“<span lang=EN-US>data</span>”，而且这两个目录下都会包含一个“<span
+lang=EN-US>openwebmail</span>”目录。其中<span lang=EN-US>cgi-bin</span>是要执行的程序，而<span
+lang=EN-US>data</span>是数据部分。因此在后面我们要改的地方都集中在<span lang=EN-US>cgi-bin</span>目录下的<span
+lang=EN-US>openwebmail</span></span></p>
+
+<p class=MsoNormal style='text-indent:21.0pt;line-height:200%'><span
+lang=EN-US style='font-family:"Microsoft YaHei"'>1</span><span
+style='font-family:"Microsoft YaHei"'>）将<span lang=EN-US>cgi-bin</span>下的<span
+lang=EN-US>openwebmail</span>移动到网页<span lang=EN-US>cgi</span>默认目录下 </span></p>
+
+<table class=a0 border=1 cellspacing=0 cellpadding=0 width="97%"
+ style='width:97.0%;margin-left:24.1pt;border-collapse:collapse;border:none'>
+ <tr style='height:14.9pt'>
+  <td width=836 valign=top style='width:836.15pt;border:solid windowtext 1.0pt;
+  background:#E7E6E6;padding:0cm 5.4pt 0cm 5.4pt;height:14.9pt'>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.5pt;line-height:200%;font-family:Menlo'>[root@localhost ~]#
+  <b>mv cgi-bin/openwebmail /var/www/cgi-bin/ </b></span></code></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='text-indent:21.0pt;line-height:200%'><span
+lang=EN-US style='font-family:"Microsoft YaHei"'>2</span><span
+style='font-family:"Microsoft YaHei"'>）将<span lang=EN-US>data</span>复制到“<span
+lang=EN-US>/var/www</span>” </span></p>
+
+<table class=a0 border=1 cellspacing=0 cellpadding=0 width="97%"
+ style='width:97.0%;margin-left:24.1pt;border-collapse:collapse;border:none'>
+ <tr style='height:14.9pt'>
+  <td width=836 valign=top style='width:836.15pt;border:solid windowtext 1.0pt;
+  background:#E7E6E6;padding:0cm 5.4pt 0cm 5.4pt;height:14.9pt'>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.5pt;line-height:200%;font-family:Menlo'>[root@localhost ~]#
+  <b>cp </b></span></code><code><b><span lang=EN-US style='font-size:10.5pt;
+  line-height:200%;font-family:Helvetica'>_</span></b></code><code><b><span
+  lang=EN-US style='font-size:10.5pt;line-height:200%;font-family:Menlo'>r
+  data/ /var/www/ </span></b></code></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='text-indent:21.0pt;line-height:200%'><span
+lang=EN-US style='font-family:"Microsoft YaHei"'>3</span><span
+style='font-family:"Microsoft YaHei"'>）将<span lang=EN-US>data</span>下的<span
+lang=EN-US>openwebmail</span>移动到<span lang=EN-US>”/var/www/html/</span>“ </span></p>
+
+<table class=a0 border=1 cellspacing=0 cellpadding=0 width="97%"
+ style='width:97.0%;margin-left:24.1pt;border-collapse:collapse;border:none'>
+ <tr style='height:14.9pt'>
+  <td width=537 valign=top style='width:537.4pt;border:solid windowtext 1.0pt;
+  background:#E7E6E6;padding:0cm 5.4pt 0cm 5.4pt;height:14.9pt'>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.5pt;line-height:200%;font-family:Menlo'>[root@localhost ~]#
+  <b>mv data/openwebmail /var/www/html/</b></span></code></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>4</span><span style='font-family:"Microsoft YaHei"'>、修改<span
+lang=EN-US>cgi-bin</span>下的<span lang=EN-US>openwebmail</span>权限</span></p>
+
+<table class=a0 border=1 cellspacing=0 cellpadding=0 width="97%"
+ style='width:97.0%;margin-left:24.1pt;border-collapse:collapse;border:none'>
+ <tr style='height:14.9pt'>
+  <td width=836 valign=top style='width:836.15pt;border:solid windowtext 1.0pt;
+  background:#E7E6E6;padding:0cm 5.4pt 0cm 5.4pt;height:14.9pt'>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.5pt;line-height:200%;font-family:Menlo'>[root@localhost
+  ~]# <b>chmod </b></span></code><code><b><span lang=EN-US style='font-size:
+  10.5pt;line-height:200%;font-family:Helvetica'>_</span></b></code><code><b><span
+  lang=EN-US style='font-size:10.5pt;line-height:200%;font-family:Menlo'>R 777
+  /var/www/cgi-bin/openwebmail/</span></b></code><code><span lang=EN-US
+  style='font-size:10.5pt;line-height:200%;font-family:Menlo'> </span></code></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>5</span><span style='font-family:"Microsoft YaHei"'>、修改<span
+lang=EN-US>suidperl</span>的权限 </span></p>
+
+<table class=a0 border=1 cellspacing=0 cellpadding=0 width="97%"
+ style='width:97.0%;margin-left:24.1pt;border-collapse:collapse;border:none'>
+ <tr style='height:14.9pt'>
+  <td width=836 valign=top style='width:836.15pt;border:solid windowtext 1.0pt;
+  background:#E7E6E6;padding:0cm 5.4pt 0cm 5.4pt;height:14.9pt'>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>[root@localhost
+  ~]# <b>chmod 4555 /usr/bin/suidperl</b></span></code></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>6</span><span style='font-family:"Microsoft YaHei"'>、修改配置文件<span
+lang=EN-US>openwebmail.conf</span>，改变参数<span lang=EN-US>ow_cgidir</span>、<span
+lang=EN-US>ow_htmldir</span>，它们一个是网页默认目录，一个是数据默认目录</span></p>
+
+<table class=a0 border=1 cellspacing=0 cellpadding=0 width="97%"
+ style='width:97.0%;margin-left:24.1pt;border-collapse:collapse;border:none'>
+ <tr style='height:14.9pt'>
+  <td width=537 valign=top style='width:537.4pt;border:solid windowtext 1.0pt;
+  background:#E7E6E6;padding:0cm 5.4pt 0cm 5.4pt;height:14.9pt'>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>[root@localhost
+  openwebmail]# <b>gedit etc/openwebmail.conf</b></span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>domainnames&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; auto</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>auth_module&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; auth_unix.pl</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>mailspooldir&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /var/mail</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><b><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>ow_cgidir&nbsp;&nbsp;&nbsp;&nbsp; /var/www/cgi-bin/openwebmail&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  //</span></b></code><code><b><span style='font-size:10.0pt;line-height:200%;
+  font-family:DengXian'>网页程序路径</span></b></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>ow_cgiurl&nbsp;&nbsp;&nbsp;&nbsp; /cgi-bin/openwebmail</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><b><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>ow_htmldir&nbsp;&nbsp;&nbsp; /var/www/data/openwebmail&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;//</span></b></code><code><b><span style='font-size:10.0pt;
+  line-height:200%;font-family:DengXian'>网页数据路径</span></b></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>ow_htmlurl&nbsp;&nbsp;&nbsp; /openwebmail</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>logfile&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /var/log/openwebmail.log</span></code></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>7</span><span style='font-family:"Microsoft YaHei"'>、修改身份认证文件，这个文件需要从<span
+lang=EN-US>defaults</span>目录拷贝，然后修改两个参数“<span lang=EN-US>passwdfile_enctypted</span>“和”<span
+lang=EN-US>passwdmkdb</span>“</span></p>
+
+<table class=a0 border=1 cellspacing=0 cellpadding=0 width="97%"
+ style='width:97.0%;margin-left:24.1pt;border-collapse:collapse;border:none'>
+ <tr style='height:14.9pt'>
+  <td width=836 valign=top style='width:836.15pt;border:solid windowtext 1.0pt;
+  background:#E7E6E6;padding:0cm 5.4pt 0cm 5.4pt;height:14.9pt'>
+  <p class=MsoNormal><code><span lang=EN-US style='font-size:10.0pt;font-family:
+  Menlo'>[root@localhost openwebmail]# <b>cp etc/defaults/auth_unix.conf etc/</b></span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>[root@localhost
+  openwebmail]# <b>gedit etc/auth_unix.conf</b></span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><b><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>passwdfile_encrypted /etc/shadow</span></b></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><b><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>passwdmkdb&nbsp;&nbsp;&nbsp; none</span></b></code></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>8</span><span style='font-family:"Microsoft YaHei"'>、修改<span
+lang=EN-US>dbm</span>文件，首先从<span lang=EN-US>defaults</span>目录下拷贝，然后改变参数“<span
+lang=EN-US>dbmopen_ext</span>“和”<span lang=EN-US>dbmopen_haslock</span>“</span></p>
+
+<table class=a0 border=1 cellspacing=0 cellpadding=0 width="97%"
+ style='width:97.0%;margin-left:24.1pt;border-collapse:collapse;border:none'>
+ <tr style='height:14.9pt'>
+  <td width=836 valign=top style='width:836.15pt;border:solid windowtext 1.0pt;
+  background:#E7E6E6;padding:0cm 5.4pt 0cm 5.4pt;height:14.9pt'>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>[root@localhost
+  openwebmail]# <b>cp etc/defaults/dbm.conf etc/</b></span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><b><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>dbm_ext&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .pag</span></b></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><b><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>dbmopen_ext&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; none</span></b></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><b><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>dbmopen_haslock&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; no</span></b></code></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>9</span><span style='font-family:"Microsoft YaHei"'>、初始化<span
+lang=EN-US>openwebmail</span>服务</span></p>
+
+<table class=a0 border=1 cellspacing=0 cellpadding=0 width="97%"
+ style='width:97.0%;margin-left:24.1pt;border-collapse:collapse;border:none'>
+ <tr style='height:14.9pt'>
+  <td width=836 valign=top style='width:836.15pt;border:solid windowtext 1.0pt;
+  background:#E7E6E6;padding:0cm 5.4pt 0cm 5.4pt;height:14.9pt'>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>[root@localhost
+  openwebmail]# <b>./openwebmail-tool.pl --init</b></span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>creating db
+  /var/www/cgi-bin/openwebmail/etc/maps/b2g ...done.</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>...done.</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>Welcome to the
+  OpenWebMail!</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><b><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>Send the site
+  report?(Y/n) yes&nbsp;&nbsp;&nbsp;&nbsp; //</span></b></code><code><b><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>这里必须输入</span></b></code><code><b><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>yes</span></b></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>sending report...</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>Thank you.</span></code></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>10</span><span style='font-family:"Microsoft YaHei"'>、重启<span
+lang=EN-US>Apache</span></span></p>
+
+<table class=a0 border=1 cellspacing=0 cellpadding=0 width="97%"
+ style='width:97.0%;margin-left:24.1pt;border-collapse:collapse;border:none'>
+ <tr style='height:14.9pt'>
+  <td width=836 valign=top style='width:836.15pt;border:solid windowtext 1.0pt;
+  background:#E7E6E6;padding:0cm 5.4pt 0cm 5.4pt;height:14.9pt'>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>[root@localhost
+  openwebmail]# <b>service httpd restart</b></span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span style='font-size:
+  10.0pt;line-height:200%;font-family:DengXian'>停止</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'> httpd</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>：</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  [</span></code><code><span style='font-size:10.0pt;line-height:200%;
+  font-family:DengXian'>确定</span></code><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>]</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span style='font-size:
+  10.0pt;line-height:200%;font-family:DengXian'>正在启动</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'> httpd</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>：</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>httpd:
+  Could not reliably determine the server's fully qualified domain name, using
+  localhost.localdomain for ServerName</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  [</span></code><code><span style='font-size:10.0pt;line-height:200%;
+  font-family:DengXian'>确定</span></code><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>]</span></code></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>11</span><span style='font-family:"Microsoft YaHei"'>、在浏览器输入“<span
+lang=EN-US>127.0.0.1/cgi-bin/openwebmail/openwebmail.pl</span>“<span
+lang=EN-US>,</span>可以看到下面的登录窗口</span></p>
+
+<p class=MsoNormal style='text-indent:21.0pt;line-height:200%'><span
+lang=EN-US style='font-family:"Microsoft YaHei"'><img border=0 width=411
+height=349 id="图片 1" src="安装openwebmail.fld/image001.png"></span></p>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>12</span><span style='font-family:"Microsoft YaHei"'>、在登录窗口输入一个已经存在的用户名和密码，由于是第一次登录，我们需要做一些设置</span></p>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>&nbsp;&nbsp;&nbsp;&nbsp; <img border=0 width=630 height=206
+id="图片 2" src="安装openwebmail.fld/image002.png"></span></p>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>13</span><span style='font-family:"Microsoft YaHei"'>、设置个人模板</span></p>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img
+border=0 width=605 height=411 id="图片 4" src="安装openwebmail.fld/image003.png"></span></p>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:200%'><span
+lang=EN-US style='font-family:"Microsoft YaHei"'>Copyright@david&nbsp;
+zhytwj2018@163.com</span></p>
+
+</div>
+
+</body>
+
+</html>

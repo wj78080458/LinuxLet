@@ -1,0 +1,380 @@
+﻿html, body{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #f2f2f2;
+    font-family: "Helvetica Neue","Hiragino Sans GB","Microsoft YaHei","\9ED1\4F53",Arial,sans-serif;
+    font-size: 14px;
+}
+
+#left{
+    height: 100%;
+    float: left;
+    width: 200px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-left: 30px;
+}
+
+        /*滚动条样式*/
+        .leftt::-webkit-scrollbar {/*滚动条整体样式*/
+            width: 4px;     /*高宽分别对应横竖滚动条的尺寸*/
+            height: 4px;
+        }
+        .leftt::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+            border-radius: 5px;
+            -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+            background: rgba(0,0,0,0.2);
+        }
+        .leftt::-webkit-scrollbar-track {/*滚动条里面轨道*/
+            -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+            border-radius: 0;
+            background: rgba(0,0,0,0.1);
+        }
+
+.navSpan{
+    display: block;
+    font-size: 16px;
+    margin-top: 0px;
+    line-height: 35px;
+}
+
+.navSpan:hover{
+    //background: #8EB4E3;
+}
+
+.sonNavSpan{
+    display: block;
+    font-size: 14px;
+    margin-top: 0px;
+    line-height: 33px;
+}
+.sonNavSpan:hover{
+    background: #dedede; 
+}
+
+.sonNavsDiv a{
+    //color: #5AD7F3;
+    text-decoration: none;
+    font-size: 14px;
+}
+.sonNavsDiv a:link{
+    color: #000;
+    text-decoration: none;
+}
+.sonNavsDiv a:visited{
+    color: #000;
+    text-decoration: none;
+}
+.sonNavsDiv{
+    display: none;
+    margin-left: 40px;
+}
+
+.navLink{
+    //color: #fff;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    margin-top: 20px;
+}
+.navLink:hover{
+    background: #dedede;
+    text-decoration: none;
+}
+.indicate{
+width: 35px; 
+height: 35px; 
+font-weight: bold; 
+right: 0px; 
+top: 0px; 
+transition: all 0.3s ease; 
+font-weight: bold; 
+text-align: center; 
+}
+
+#right{
+    width: 80%;
+    height: 100%;
+    margin-left: 240px;
+    text-align: center;
+}
+
+#caozuoTable{
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    height: 100px;
+    align: center;
+    rules: rows;
+    text-align: center;
+}
+
+.indexLogoImg{
+	width: 300px;
+	height:200px;
+	margin: 60px auto;
+}
+.indexFindDiv{
+	height: 34px;
+	width: auto;
+	display: block;
+	flex-direction: row;
+	text-align center;
+}
+.indexFindInput{
+	width: 540px;
+	height: 34px;
+	vertical-align: top;
+}
+.indexFindImg{
+	height: 36px;
+	margin-left: -5px;
+	vertical-align: top;
+    border: 2px solid #e2e2e2;
+    background-color: #e2e2e2
+}
+
+.topFindDiv{
+	width: 100%;
+	height: 55px;
+	display: flex;
+	flex-direction: row;
+    margin-bottom: 10px;
+    margin-top: 7px;
+}
+.topFindLogo{
+	height: 40px;
+	width: 80px;
+	vertical-align: top;
+	margin-left: 0px;
+    margin-bottom: 10px;
+    //border: 1px solid;
+}
+.topFindForm{
+	height: 34px;
+	width: 770px;
+	display: block;
+	margin-left: 0px;
+	padding-left: 0px;
+    //border: 1px solid;
+    text-align: left;
+}
+.topFindInput{
+	height:	34px;	
+	width: 440px;
+	vertical-align: top;
+	margin-left: 15px;
+	margin-right:0px;
+}
+.topFindImg{
+	height: 36px;
+	width: 78px;
+	vertical-align: top;
+	margin-left: -5px;
+    border: 2px solid #d2d2d2;
+}
+.downImg{
+	height: 42px;
+	width: 45px;
+	float: right;
+	margin-right: -160px;
+    //text-align: right;
+}
+
+.otherConDiv{
+	width: 100%;
+	height: 90%;
+	margin-top: -10px;
+	overflow: hidden;
+}
+.titleDiv{
+	width: 100%;
+	height: 33px;
+	text-align: left;
+    vertical-align: middle;
+    background-color: #f2f2f2;
+}
+.pnDiv{
+	margin-right: 20px;
+	float: right;
+	height: 30px;
+}
+.pnDiv a{
+	//border: 1px solid;
+	//border-radius: 5px;
+	margin: 10px;
+}
+
+.mainConDiv{
+	width: 100%;
+	height: 95%;
+	display: inline-block;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	background-color: #ffffff;
+}
+        /*滚动条样式*/
+        .mainConDiv::-webkit-scrollbar {/*滚动条整体样式*/
+            width: 4px;     /*高宽分别对应横竖滚动条的尺寸*/
+            height: 4px;
+        }
+        .mainConDiv::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+            border-radius: 5px;
+            -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+            background: rgba(0,0,0,0.2);
+        }
+        .mainConDiv::-webkit-scrollbar-track {/*滚动条里面轨道*/
+            -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+            border-radius: 0;
+            background: rgba(0,0,0,0.1);
+        }
+.resDiv{
+	width: 100%;
+	height: 70px;
+	text-align: left;
+}
+
+.eduDiv{
+	width: 75%;
+	display: flex;
+	flex-direction: column;
+	margin: 10px auto;
+}
+
+.eduImg{
+	//width: 100%;
+    width: 230px;
+    height:120px;
+    border: 3px solid;
+    border-radius: 20px;
+}
+.contactDiv{
+    width: 100%;
+    height: 50rpx;
+    position: absolute;
+    bottom: 10px;
+    margin-left: auto;
+}
+
+
+
+#right_layer{
+    position:absolute;
+    bottom:10px;
+    right:0px;
+    height: 200px;
+    width: 200px;
+    background: #0000ff;
+    transform:translateX(100px);
+    transition:0.5s;
+}
+.rightDiv{
+    display: none;
+        position:absolute;
+    bottom:10px;
+    right:0px;
+    height: 200px;
+    width: 200px;
+    background: #0000ff;
+}
+
+
+
+
+
+
+
+
+
+
+.menus { 
+width: 100%; 
+overflow: hidden; 
+box-shadow: 1px 1px 4px gray; 
+/* border-bottom: 1px solid black; 
+border-top: 1px solid black; */ 
+border: 1px solid gray; 
+border-radius: 5px; 
+}
+
+.menu { 
+overflow: hidden; 
+height: 0px; 
+transition: all 0.3s ease; 
+}
+
+.menu_title { 
+width: 100%; 
+height: 50px; 
+line-height: 50px; 
+background: #fafafa; 
+color: gray; 
+font-size: 20px; 
+padding-left: 15px; 
+transition: all 0.3s ease; 
+cursor: pointer; 
+position: relative; 
+font-weight: bold; 
+overflow: hidden; 
+text-align: left;
+}
+
+.menu_title:hover { 
+background: #dedede; 
+color: black; 
+}
+
+.indicator { 
+width: 50px; 
+height: 50px; 
+font-weight: bold; 
+position: absolute; 
+right: 0px; 
+top: 0px; 
+transition: all 0.3s ease; 
+font-weight: bold; 
+text-align: center; 
+}
+
+.item { 
+width: 100%; 
+height: 40px; 
+line-height: 40px; 
+background: gray; 
+color: white; 
+padding-left: 30px; 
+transition: all 0.3s ease; 
+cursor: pointer; 
+overflow: hidden; 
+text-align: left;
+}
+
+.item:hover { 
+background: #B22222; 
+}
+
+.item a { 
+width: 100%; 
+height: 40px; 
+display: block; 
+text-decoration: none; 
+color: white; 
+text-decoration: none; 
+}
+
+.item_divider { 
+width: 100%; 
+height: 1px; 
+background: white; 
+display: block; 
+opacity: 0.8; 
+}
+
+.menu_divider { 
+width: 100%; 
+height: 1px; 
+background: gray; 
+}
